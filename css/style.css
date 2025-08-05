@@ -1,0 +1,65 @@
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: "Share Tech Mono", monospace;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+h1,
+h2 {
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  margin: 0;
+}
+
+.links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  color: #00ff00;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+li strong {
+  font-weight: bold; /* Default for <strong>, but you can make it bolder */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Optional: subtle emphasis */
+  font-size: 1.30em; /* Optional: slightly larger */
+}
+
+#kursusList li.provider {
+  margin-top: 30px; /* Creates spacing before each provider group */
+  font-size: 1.1em;
+  font-weight: bold;
+  list-style-type: none;
+}
